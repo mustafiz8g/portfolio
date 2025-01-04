@@ -37,6 +37,7 @@ import Banner from "./Banner";
 import { FaCircleArrowUp } from "react-icons/fa6";
 import './Banner.css'
 import Skill from "./Skill";
+import Contact from "./Contact";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -94,11 +95,11 @@ const Home = () => (
     <section id="projects" className="h-screen bg-green-100 flex items-center justify-center">
       <h1 className="text-4xl">Projects Section</h1>
     </section>
-    <section id="about" className="h-screen bg-green-100 flex items-center justify-center">
+    <section id="about" className="h-screen bg-red-100 flex items-center justify-center">
       <h1 className="text-4xl">About Section</h1>
     </section>
-    <section id="contact" className="h-screen bg-yellow-100 flex items-center justify-center">
-      <h1 className="text-4xl">Contact Section</h1>
+    <section id="contact" >
+      <Contact></Contact>
     </section>
     <ScrollToTop />
   </>
