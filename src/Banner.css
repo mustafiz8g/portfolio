@@ -1,0 +1,42 @@
+
+.btn_css {
+    background-color: transparent;
+    color: #2190a3;
+    position: relative;
+    border: 2px solid #03fd9d;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s;
+    padding:2px 6px 2px 6px;
+    font-weight: 600;
+  }
+  
+  .btn_css:hover {
+    background-color: #03fd9d;
+    color: black;
+  }
+  
+  .btn_css::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #5b55ff;
+    transform: skewX(35deg);
+    z-index: -9999;
+    transition: width 0.3s ease;
+  }
+  
+  .btn_css:hover::before {
+    width: 150%;
+  }
+  
+
+  .text_css {
+    background: linear-gradient(-25deg, #1fbcb9 0%, #b2bf43 100%);
+    color: transparent;
+    background-clip: text;
+  }
+  

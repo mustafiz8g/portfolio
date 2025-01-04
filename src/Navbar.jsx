@@ -10,25 +10,21 @@ const Navbar = () => {
 
     const navOptions = < >
        
-        <li><Link className='navStyle ' smooth={true}
+        <li><Link className='nav_btn ' smooth={true}
             duration={500} to='skill'>Skill</Link></li>
-        <li><Link className='navStyle' smooth={true}
+        <li><Link className='nav_btn' smooth={true}
             duration={500} to='project'>Project</Link></li>
-        <li><Link className='navStyle' smooth={true}
+        <li><Link className='nav_btn' smooth={true}
             duration={500} to='about'>About</Link></li>
-        <li><Link className='navStyle' smooth={true}
+        <li><Link className='nav_btn' smooth={true}
             duration={500} to='contact'>Contact</Link></li>
 
 
     </>
 
-
-
-
-
     return (
 
-        <div className="navbar sticky top-0 flex justify-around border-red-600 max-w-7xl mx-auto   ">
+        <div className="navbar z-20 sticky top-0 flex justify-center gap-2 border-red-600 max-w-7xl mx-auto   ">
 
             <div className="first">
                 <div className="dropdown">
@@ -42,7 +38,7 @@ const Navbar = () => {
                         {navOptions}
                     </ul>
                 </div>
-                <Link to='/' className=" text-3xl font-bold bottom-[2px] relative mr-2"><img className="w-8 " src={logo} alt="" /></Link>
+                <Link to='banner' className=" text-3xl font-bold bottom-[2px] relative mr-2"><img className="w-8 " src={logo} alt="" /></Link>
                 <div className="second hidden md:flex">
                     <ul className="flex gap-2  px-2 border-2 border-slate-400 rounded-lg ">
                         {navOptions}
@@ -52,7 +48,7 @@ const Navbar = () => {
             </div>
             <div>
               
-                <div className="third flex gap-2 ">
+                <div className="third flex gap-2 px-2 border-2 border-slate-400 rounded-lg py-[2px]">
 
 
                     <FaGithub className="text-lg"></FaGithub>
