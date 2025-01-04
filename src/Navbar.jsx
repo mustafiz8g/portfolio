@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import logo from '../src/assets/mylogo.png'
 
 import './Navbar.css'
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
 
@@ -13,7 +14,7 @@ const Navbar = () => {
         <li><Link className='nav_btn ' smooth={true}
             duration={500} to='skill'>Skill</Link></li>
         <li><Link className='nav_btn' smooth={true}
-            duration={500} to='project'>Project</Link></li>
+            duration={500} to='projects'>Projects</Link></li>
         <li><Link className='nav_btn' smooth={true}
             duration={500} to='about'>About</Link></li>
         <li><Link className='nav_btn' smooth={true}
@@ -38,7 +39,8 @@ const Navbar = () => {
                         {navOptions}
                     </ul>
                 </div>
-                <Link to='banner' className=" text-3xl font-bold bottom-[2px] relative mr-2"><img className="w-8 " src={logo} alt="" /></Link>
+                
+                <NavLink to='/' className=" text-3xl font-bold bottom-[2px] relative mr-2"><img className="w-8 " src={logo} alt="" /></NavLink>
                 <div className="second hidden md:flex">
                     <ul className="flex gap-2  px-2 border-2 border-slate-400 rounded-lg ">
                         {navOptions}

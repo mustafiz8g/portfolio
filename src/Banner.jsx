@@ -2,10 +2,11 @@
 import { MdFileDownload } from 'react-icons/md';
 import mustafizur from '../src/assets/mustafizur.png'
 import './Banner.css'
+import { Link } from 'react-scroll';
 
 const Banner = () => {
     return (
-        <header className=" flex justify-center ">
+        <header className=" flex justify-center lg:mt-20 mt-6">
         <div className=" flex flex-col lg:flex-row items-center justify-between">
           {/* Left Content */}
           <div className="flex-1 lg:text-left p-4 space-y-4 max-w-[700px]">
@@ -20,9 +21,15 @@ const Banner = () => {
               Front-End </span> Artisan crafting seamless, modern, and responsive web experiences with creativity and code.
             </p>
             <div className="space-x-4">
-              <button className='btn_css  border-slate-400 '><MdFileDownload className='inline'/>
-              Resume</button>
-              <button className='btn_css border-slate-400 '>Hire Me</button>
+             <a href="https://drive.google.com/file/d/17Bs-KU0xKrQTuWO40a3Fp_TnjYUf3JQ9/view?usp=sharing"
+             target='_blank'
+             rel="noopener noreferrer"
+             >
+             <button className='btn_css  border-slate-400'><MdFileDownload className='inline'/>
+             Resume</button>
+             </a>
+            <Link smooth={true}
+            duration={500} to='contact'>  <button className='btn_css border-slate-400 '>Hire Me</button></Link>
             </div>
           </div>
   
