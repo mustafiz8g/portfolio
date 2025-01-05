@@ -58,14 +58,14 @@ const About = () => {
                 <div className="p-6 md:w-3/4">
                     <h1 className="text-3xl font-bold mb-4">Who am I?</h1>
                     <p className="text-lg mb-4">
-                        I'm a <span className="text-red-500 font-bold">front-end developer</span> Mymensingh , Bangladesh. I'm bringing the <span className="text-red-500 font-bold">creativity</span> of
-                        the nasheed industry and the <span className="text-red-500 font-bold">precision</span> of
+                        I'm a <span className="text_css font-bold">front-end developer</span> Mymensingh , Bangladesh. I'm bringing the <span className="text_css font-bold">creativity</span> of
+                        the nasheed industry and the <span className="text_css font-bold">precision</span> of
                         journalism to a webpage near you. Coding has become a perfect union of my two favourite
                         passions, and I love seeing the results of my efforts helping the user's experience.
                     </p>
                     <p className="text-lg mb-4">
                         I’m finding unique solutions to complex problems, and I’m doing it all while making{" "}
-                        <span className="text-red-500 font-bold">the worst puns</span> you’ve never heard
+                        <span className="text_css font-bold">the worst puns</span> you’ve never heard
                         before.
                     </p>
                     <hr className="my-6" />

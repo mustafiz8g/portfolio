@@ -33,13 +33,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="max-w-7xl mx-auto space-y-5 p-6 ">
+    <div className="max-w-7xl mx-auto space-y-16 p-6 ">
       <h2 className="text-center font-medium text-3xl mb-9"> My Projects <div className="badge badge-secondary bottom-4 relative text-white">Will be updated soon. </div></h2>
 
-      {projects.map((project) => (
+      {projects.map((project ,index) => (
         <div
           key={project.id}
-          className="flex flex-col gap-2 h-[700px] md:flex-row md:h-[340px] rounded-lg overflow-hidden  transition-shadow duration-300 "
+          className={`flex flex-col gap-2 h-[700px] md:flex-row md:h-[340px] rounded-lg overflow-hidden  transition-shadow duration-300 ${ index % 2 === 0 ? "" : "md:flex-row-reverse"}`}
         >
           {/* Image Section */}
           <div className="w-full flex-1 h-[700px] md:h-[340px] border-2 border-base-200 rounded-lg  overflow-hidden relative">
