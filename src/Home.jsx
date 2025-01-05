@@ -58,13 +58,14 @@ export default function ScrollLinked() {
         <>
             <motion.div
                 id="scroll-indicator"
+                className="z-50"
                 style={{
                     scaleX,
                     position: "fixed",
-                    top: 0,
+                    bottom:0,
                     left: 0,
                     right: 0,
-                    height: 2,
+                    height: 6,
                     originX: 0,
                     backgroundColor: "#03fd9d",
                 }}

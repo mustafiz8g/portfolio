@@ -37,7 +37,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 placeholder="Your Name"
-                                className="w-full p-3 rounded-md border border-green-400  focus:outline-none focus:ring-1 focus:ring-green-500"
+                                className="w-full p-3 rounded-md border  focus:outline-none focus:ring-1 focus:ring-green-500"
                             />
                         </div>
                         <div>
@@ -45,7 +45,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 placeholder="Email"
-                                className="w-full p-3 rounded-md border border-green-400  focus:outline-none focus:ring-1 focus:ring-green-500"
+                                className="w-full p-3 rounded-md border   focus:outline-none focus:ring-1 focus:ring-green-500"
                             />
                         </div>
                         <div>
@@ -53,7 +53,7 @@ const Contact = () => {
                             <textarea
                                 placeholder="Message"
                                 rows="2"
-                                className="w-full p-3 rounded-md border border-green-400 focus:outline-none focus:ring-1 focus:ring-green-500"
+                                className="w-full p-3 rounded-md border  focus:outline-none focus:ring-1 focus:ring-green-500"
                             ></textarea>
                         </div>
                        <Link 
