@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 const projects = [
@@ -15,7 +16,7 @@ const projects = [
     title: "Fitness Care",
     image: "https://i.ibb.co/KjH36p2/Screenshot-5-1-2025-75143-mustafiz8g-github-io.jpg",
     description: "A responsive and interactive fitness care web app featuring workout plans, health tips, and progress tracking. Built with React and Tailwind CSS, ensuring smooth animations, sleek UI, and accessibility across various devices for an enhanced user experience.",
-    technologies: ["React", "Tailwind", "Firebase","React Router"],
+    technologies: ["React", "Tailwind", "Firebase", "React Router"],
     liveLink: "https://mustafiz8g.github.io",
     repoLink: "https://github.com/username/portfolio",
   },
@@ -32,11 +33,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="max-w-7xl mx-auto space-y-5 p-6">
+    <div className="max-w-7xl mx-auto space-y-5 p-6 ">
+      <h2 className="text-center font-medium text-3xl mb-9"> My Projects <div className="badge badge-secondary bottom-4 relative text-white">Will be updated soon. </div></h2>
+
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex flex-col gap-4 h-[700px] md:flex-row md:h-[340px] shadow-lg rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+          className="flex flex-col gap-2 h-[700px] md:flex-row md:h-[340px] shadow-lg rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 "
         >
           {/* Image Section */}
           <div className="w-full flex-1 h-[700px] md:h-[340px] border-2 border-base-200 rounded-lg  overflow-hidden relative">
@@ -49,7 +52,7 @@ const Projects = () => {
           <div className=""></div>
 
           {/* Text Section */}
-          <div className=" flex-1 lg:w-1/2">
+          <div className=" flex-1 lg:w-1/2 p-6  pl-3">
             <h2 className="text-xl font-bold ">{project.title}</h2>
             <p className="text-justify mt-2">{project.description}</p>
             <div className="mt-4">
@@ -60,12 +63,28 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-            <div className="flex mt-4 space-x-4">
-              <button className='btn_css  border-slate-400'>
-                          live</button>
-              <button className='btn_css  border-slate-400'>
-                          Repository</button>
-            
+            <div className="flex justify-between mt-4 ">
+              <div>
+                <NavLink to='/details'>
+                  <button
+
+                    type="submit"
+                    className="w-[200px] px-2 py-1 rounded-md text-gray-900 font-semibold text-[18px] transition hover:opacity-90"
+                    style={{
+                      background: "linear-gradient(-25deg, #1fbcb9 0%, #b2bf43 100%)",
+                    }}
+                  >
+                    Details
+                  </button>
+                </NavLink>
+              </div>
+              <div className="flex gap-2">
+                <button className='btn_css w-16 border-slate-400'>
+                  live</button>
+                <button className='btn_css w-28 border-slate-400'>
+                  Repository</button>
+              </div>
+
             </div>
           </div>
         </div>

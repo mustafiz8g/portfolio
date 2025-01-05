@@ -38,6 +38,7 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 import './Banner.css'
 import Skill from "./Skill";
 import Contact from "./Contact";
+import "./ScrollToTop.css";
 
 
 
@@ -45,6 +46,7 @@ import Contact from "./Contact";
 
 import { motion, useSpring, useScroll } from "motion/react"
 import Projects from "./Project";
+import About from "./About";
 
 export default function ScrollLinked() {
     const { scrollYProgress } = useScroll()
@@ -97,6 +99,7 @@ const ScrollToTop = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+     
     };
   }, []);
 
@@ -136,12 +139,15 @@ const Content = () => (
       <Projects></Projects>
     </section>
     <section id="about">
-      <h1 className="text-4xl">About Section</h1>
+      <About></About>
     </section>
     <section id="contact" >
       <Contact></Contact>
     </section>
-    <ScrollToTop />
+   <div className="scroll-animation fixed bottom-3 right-2">
+   <ScrollToTop  />
+   </div>
+    
   </>
 );
 

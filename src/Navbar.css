@@ -6,6 +6,7 @@
     transition: all 0.4s;
     padding:0 4px 0 4px;
     font-weight: 600;
+    font-size: 18px;
   }
   
   .nav_btn:hover {
@@ -14,6 +15,10 @@
     cursor: pointer;
   }
  
+  .navblur {
+    /* background: rgba(255, 255, 255, 0.66); */
+    backdrop-filter: blur(24px);
+}
   
   
   

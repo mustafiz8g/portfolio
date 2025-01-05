@@ -1,7 +1,7 @@
 
 
 import { useEffect, useState } from "react";
-import Marquee from "react-fast-marquee";
+
 const Skill = () => {
   const [data, setData] = useState([]);
 

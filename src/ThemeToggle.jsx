@@ -17,7 +17,7 @@ const ThemeToggle = () => {
   return (
    
     <div className=" flex justify-center items-center ml-2">
-    <button className="text-lg" onClick={toggleTheme}>
+    <button className="text-2xl" onClick={toggleTheme}>
       {theme === "light" ? <FaMoon /> : <FaSun />} 
      
     </button>

@@ -1,13 +1,13 @@
 
 .btn_css {
     background-color: transparent;
-    color: #2190a3;
+    
     position: relative;
     border: 2px solid #03fd9d;
     border-radius: 4px;
     overflow: hidden;
     transition: all 0.3s;
-    padding:2px 6px 2px 6px;
+    padding:3px 8px 3px 8px;
     font-weight: 600;
   }
   

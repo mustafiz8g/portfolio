@@ -6,17 +6,17 @@ import { Link } from 'react-scroll';
 
 const Banner = () => {
     return (
-        <header className=" flex justify-center lg:mt-20 mt-6">
+        <header className=" flex justify-center lg:mt-20 mt-6 max-w-7xl mx-auto">
         <div className=" flex flex-col lg:flex-row items-center justify-between">
           {/* Left Content */}
-          <div className="flex-1 lg:text-left p-4 space-y-4 max-w-[700px]">
+          <div className="flex-1 lg:text-left p-4 space-y-4 ">
           <h1 className="lg:text-4xl text-3xl font-bold ">
               Hi, I'm 
             </h1>
             <h1 className="text-4xl lg:text-6xl font-bold text_css">
             Mustafizur Rahman  </h1>
             
-            <p className="text-xl lg:text-2xl font-medium">
+            <p className="text-xl lg:text-2xl font-medium ">
               A <span className="text-2xl lg:text-4xl font-bold text_css">
               Front-End </span> Artisan crafting seamless, modern, and responsive web experiences with creativity and code.
             </p>
