@@ -39,7 +39,7 @@ const Projects = () => {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex flex-col gap-2 h-[700px] md:flex-row md:h-[340px] shadow-lg rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 "
+          className="flex flex-col gap-2 h-[700px] md:flex-row md:h-[340px] rounded-lg overflow-hidden  transition-shadow duration-300 "
         >
           {/* Image Section */}
           <div className="w-full flex-1 h-[700px] md:h-[340px] border-2 border-base-200 rounded-lg  overflow-hidden relative">

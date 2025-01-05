@@ -14,7 +14,7 @@ const Navbar = () => {
     const navOptions = < >
        
         <li><Link className='nav_btn ' smooth={true}
-            duration={500} to='skill'>Skill</Link></li>
+            duration={500} to='skill'>Skills</Link></li>
         <li><Link className='nav_btn' smooth={true}
             duration={500} to='projects'>Projects</Link></li>
         <li><Link className='nav_btn' smooth={true}
