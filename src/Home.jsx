@@ -39,6 +39,45 @@ import './Banner.css'
 import Skill from "./Skill";
 import Contact from "./Contact";
 
+
+
+// start motin scrool
+
+import { motion, useSpring, useScroll } from "motion/react"
+import Projects from "./Project";
+
+export default function ScrollLinked() {
+    const { scrollYProgress } = useScroll()
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+    })
+
+    return (
+        <>
+            <motion.div
+                id="scroll-indicator"
+                style={{
+                    scaleX,
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: 2,
+                    originX: 0,
+                    backgroundColor: "#03fd9d",
+                }}
+            />
+            <Content />
+        </>
+    )
+}
+// start motin end 
+
+
+
+
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = React.useState(false);
 
@@ -84,7 +123,7 @@ const ScrollToTop = () => {
   );
 };
 
-const Home = () => (
+const Content = () => (
   <>
     <section>
       <Banner />
@@ -92,10 +131,10 @@ const Home = () => (
     <section id="skill">
      <Skill></Skill>
     </section>
-    <section id="projects" className="h-screen bg-green-100 flex items-center justify-center">
-      <h1 className="text-4xl">Projects Section</h1>
+    <section id="projects">
+      <Projects></Projects>
     </section>
-    <section id="about" className="h-screen bg-red-100 flex items-center justify-center">
+    <section id="about">
       <h1 className="text-4xl">About Section</h1>
     </section>
     <section id="contact" >
@@ -105,4 +144,4 @@ const Home = () => (
   </>
 );
 
-export default Home;
+// export default Content;

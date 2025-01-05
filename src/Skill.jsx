@@ -1,7 +1,7 @@
 
 
 import { useEffect, useState } from "react";
-
+import Marquee from "react-fast-marquee";
 const Skill = () => {
   const [data, setData] = useState([]);
 
@@ -15,7 +15,7 @@ const Skill = () => {
  <div className="mt-20 mb-20">
     
     <h2 className="text-center font-medium text-3xl mb-9">Technologies Powering My Projects</h2>
-
+   
     <div className="grid grid-cols-6 lg:grid-cols-12 p-6 max-w-7xl mx-auto gap-4">
       {data.map((image) => (
         <div

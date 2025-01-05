@@ -1,5 +1,7 @@
 
 import { FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Contact = () => {
     return (
@@ -50,19 +52,29 @@ const Contact = () => {
                             <label className="block mb-2  font-medium">Message</label>
                             <textarea
                                 placeholder="Message"
-                                rows="4"
+                                rows="2"
                                 className="w-full p-3 rounded-md border border-green-400 focus:outline-none focus:ring-1 focus:ring-green-500"
                             ></textarea>
                         </div>
-                        <button
-                            type="submit"
-                            className="w-full p-3 rounded-md text-gray-900 font-semibold transition hover:opacity-90"
-                            style={{
-                                background: "linear-gradient(-25deg, #1fbcb9 0%, #b2bf43 100%)",
-                            }}
-                        >
-                            Send Message
-                        </button>
+                       <Link 
+                         onClick={() => Swal.fire({
+                            title: " Sent Succussful ",
+                            text:"Thank you" ,
+                            timer: 1000,
+                            icon: "success"
+                        })}
+                       >
+                       <button
+                          
+                          type="submit"
+                          className="w-full mt-2 p-2 rounded-md text-gray-900 font-semibold text-[18px] transition hover:opacity-90"
+                          style={{
+                              background: "linear-gradient(-25deg, #1fbcb9 0%, #b2bf43 100%)",
+                          }}
+                      >
+                          Send Message
+                      </button>
+                       </Link>
 
                     </form>
                 </div>

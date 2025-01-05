@@ -5,6 +5,7 @@ import logo from '../src/assets/mylogo.png'
 
 import './Navbar.css'
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 const Navbar = () => {
 
 
@@ -42,7 +43,7 @@ const Navbar = () => {
                 
                 <NavLink to='/' className=" text-3xl font-bold bottom-[2px] relative mr-2"><img className="w-8 " src={logo} alt="" /></NavLink>
                 <div className="second hidden md:flex">
-                    <ul className="flex gap-2  px-2 border-2 border-slate-400 rounded-lg ">
+                    <ul className="flex gap-2  px-2 border-2 border-slate-400 rounded-md hover:border-green-500 ">
                         {navOptions}
                     </ul>
 
@@ -50,7 +51,7 @@ const Navbar = () => {
             </div>
             <div>
               
-                <div className="third flex gap-2 px-2 border-2 border-slate-400 rounded-lg py-[2px]">
+                <div className="third flex gap-2 px-2 border-2 border-slate-400 hover:border-green-500 rounded-lg py-[2px]">
 
 
                     <FaGithub className="text-lg"></FaGithub>
@@ -58,6 +59,7 @@ const Navbar = () => {
                     <FaFacebook className="text-lg"></FaFacebook>
 
                 </div>
+                    <ThemeToggle></ThemeToggle>
             </div>
         </div>
 
